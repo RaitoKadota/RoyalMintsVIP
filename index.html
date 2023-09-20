@@ -6,14 +6,44 @@
   <title>Document</title>
 </head>
 <body>
+  <img src="./main.jpg" alt="">
+  <div class="test-click">
+  </div>
   <script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
-<stripe-buy-button
-  buy-button-id="buy_btn_1NsJ04AUc6SfmWZAyvn9ix7E"
-  publishable-key="pk_live_51Nq6mzAUc6SfmWZAETWhXRP4DiAVo2VXDxoGPcrYtMd0gglYsrVFvIDMdWhRizxTyf5YBYoGtBctx7rPhfk9BQg000T1IP27Lt"
->
-</stripe-buy-button>
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+  <stripe-buy-button
+    buy-button-id="buy_btn_1NsJ04AUc6SfmWZAyvn9ix7E"
+    publishable-key="pk_live_51Nq6mzAUc6SfmWZAETWhXRP4DiAVo2VXDxoGPcrYtMd0gglYsrVFvIDMdWhRizxTyf5YBYoGtBctx7rPhfk9BQg000T1IP27Lt"
+  >
+  </stripe-buy-button>
 </body>
 </html>
+<script>
+  const testClick = document.querySelector('.test-click');
+  testClick.addEventListener('click', () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+</script>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .test-click {
+    width: 44vw;
+    height: 15vw;
+    position: absolute;
+    top: 93vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+</style>
