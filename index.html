@@ -9,7 +9,12 @@
   <div id="index">
     <div class="pc">
       <img src="https://cdn.discordapp.com/attachments/759981236063043594/1154387614426742835/main.jpg" alt="">
-      <button class="header-button about" onclick="scrollByPercentage(40)"></button>
+      <button class="header-button about" onclick="scrollByPercentage(8)"></button>
+      <button class="header-button campaign" onclick="scrollByPercentage(15)"></button>
+      <button class="header-button features" onclick="scrollByPercentage(22)"></button>
+      <button class="header-button voice" onclick="scrollByPercentage(41)"></button>
+      <button class="header-button price" onclick="scrollByPercentage(15)"></button>
+      <button class="header-button buynow" onclick="scrollByPercentage(15)"></button>
       <div class="click-area pc-area1">
       </div>
       <div class="click-area pc-area2">
@@ -145,12 +150,37 @@
     height: 40px;
   }
   .header-button {
-    width: 6%;
+    width: 8%;
     height: 60px;
     position: absolute;
-    top: 0px;
-    left: 42%;
     z-index: 100;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .about {
+    top: 0px;
+    left: 42%;
+  }
+  .campaign {
+    top: 0px;
+    left: 51%;
+  }
+  .features {
+    top: 0px;
+    left: 61%;
+  }
+  .voice {
+    top: 0px;
+    left: 71%;
+  }
+  .price {
+    top: 0px;
+    left: 80%;
+  }
+  .buynow {
+    top: 0px;
+    left: 88%;
   }
 </style>
