@@ -2,9 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title><?php wp_title(); ?></title>
   <?php wp_head(); ?>
-  <link rel="stylesheet" href="./RoyalMintsVIP/style.css">
+  <link rel="stylesheet" href="./RoyalMintsVIP/style.css" media="screen and (max-width: 768px)" >
 </head>
 <body>
   <div id="index">
@@ -75,6 +76,40 @@
     const scrollAmount = (percentage / 100) * scrollableElement.scrollHeight;
     window.scrollBy(0, scrollAmount);
   }
+  // メディアクエリの条件を設定
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+// .pcクラスと.spクラスの要素を取得
+const pcElements = document.querySelectorAll(".pc");
+const spElements = document.querySelectorAll(".sp");
+
+// メディアクエリがマッチしたときのコールバック関数
+function handleMediaQueryChange(event) {
+  if (event.matches) {
+    // メディアクエリがマッチした場合の処理
+    pcElements.forEach((element) => {
+      element.style.display = "none"; // .pcクラスの要素を非表示にする
+    });
+    spElements.forEach((element) => {
+      element.style.display = "flex"; // .spクラスの要素を表示する
+    });
+  } else {
+    // メディアクエリがマッチしない場合の処理
+    pcElements.forEach((element) => {
+      element.style.display = "block"; // .pcクラスの要素を表示する
+    });
+    spElements.forEach((element) => {
+      element.style.display = "none"; // .spクラスの要素を非表示にする
+    });
+  }
+}
+
+// メディアクエリの状態に変更があった場合にコールバック関数を呼び出す
+mediaQuery.addListener(handleMediaQueryChange);
+
+// 初期状態でメディアクエリの状態を確認
+handleMediaQueryChange(mediaQuery);
+
 </script>
 <style>
   body {
