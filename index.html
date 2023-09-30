@@ -23,17 +23,18 @@
       </div>
       <div class="click-area pc-area3">
       </div>
-      <dialog id="dialog">
-        <div class="dialog_inner">
-          <stripe-buy-button
-            buy-button-id="buy_btn_1NsJ04AUc6SfmWZAyvn9ix7E"
-            publishable-key="pk_live_51Nq6mzAUc6SfmWZAETWhXRP4DiAVo2VXDxoGPcrYtMd0gglYsrVFvIDMdWhRizxTyf5YBYoGtBctx7rPhfk9BQg000T1IP27Lt"
-          >
-          </stripe-buy-button>
-        </div>
-      </dialog>
     </div>
     <div class="sp">
+      <div class="click-area sp-area1">
+      </div>
+      <div class="click-area sp-area2">
+      </div>
+      <div class="click-area sp-area3">
+      </div>
+      <div class="click-area sp-area4">
+      </div>
+      <div class="click-area sp-area5">
+      </div>
       <img src="./RoyalMintsVIP/img/sp-buynow.jpg" class="header" alt="">
       <div class="sp-spacer"></div>
       <img src="./RoyalMintsVIP/img/sp-mainvisual.jpg" alt="">
@@ -51,6 +52,15 @@
       <img src="./RoyalMintsVIP/img/image.jpg" alt="">
       <img src="./RoyalMintsVIP/img/sp-buynow.jpg" alt="">
     </div>
+    <dialog id="dialog">
+      <div class="dialog_inner">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1NsJ04AUc6SfmWZAyvn9ix7E"
+          publishable-key="pk_live_51Nq6mzAUc6SfmWZAETWhXRP4DiAVo2VXDxoGPcrYtMd0gglYsrVFvIDMdWhRizxTyf5YBYoGtBctx7rPhfk9BQg000T1IP27Lt"
+        >
+        </stripe-buy-button>
+      </div>
+    </dialog>
   </div>
   <script async
     src="https://js.stripe.com/v3/buy-button.js">
@@ -164,6 +174,53 @@ handleMediaQueryChange(mediaQuery);
     height: 15vw;
     position: absolute;
     top: 440vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area1 {
+    width: 34vw;
+    height: 15vw;
+    position: absolute;
+    top: 0vw;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area2 {
+    width: 90vw;
+    height: 33vw;
+    position: absolute;
+    top: 330vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area3 {
+    width: 90vw;
+    height: 33vw;
+    position: absolute;
+    top: 1200vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area4 {
+    width: 90vw;
+    height: 33vw;
+    position: absolute;
+    top: 1540vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area5 {
+    width: 35vw;
+    height: 16vw;
+    position: absolute;
+    top: 1622vw;
+    right: 0;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
