@@ -82,7 +82,6 @@
   });
   const scrollByPercentage = (percentage) => {
     const scrollableElement = document.getElementById('index');
-    console.log(scrollableElement.scrollHeight)
     const scrollAmount = (percentage / 100) * scrollableElement.scrollHeight;
     window.scrollBy(0, scrollAmount);
   }
@@ -106,7 +105,7 @@ function handleMediaQueryChange(event) {
   } else {
     // メディアクエリがマッチしない場合の処理
     pcElements.forEach((element) => {
-      element.style.display = "block"; // .pcクラスの要素を表示する
+      element.style.display = "flex"; // .pcクラスの要素を表示する
     });
     spElements.forEach((element) => {
       element.style.display = "none"; // .spクラスの要素を非表示にする
