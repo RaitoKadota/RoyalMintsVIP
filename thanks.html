@@ -16,56 +16,14 @@
 </body>
 </html>
 <script>
-  const clickElements = document.getElementsByClassName('click-area');
-  for (let i = 0; i < clickElements.length; i++) {
-        clickElements[i].addEventListener('click', () => {
-          dialog.showModal();
-        });
-      }
-  dialog.addEventListener('click', (e) => {
-    if (!e.target.closest('.dialog_inner')) {
-      dialog.close();
-    }
-  });
-  const scrollByPercentage = (percentage) => {
-    const scrollableElement = document.getElementById('index');
-    const scrollAmount = (percentage / 100) * scrollableElement.scrollHeight;
-    window.scrollBy(0, scrollAmount);
-  }
-  // メディアクエリの条件を設定
-const mediaQuery = window.matchMedia("(max-width: 768px)");
-
-// .pcクラスと.spクラスの要素を取得
-const pcElements = document.querySelectorAll(".pc");
-const spElements = document.querySelectorAll(".sp");
-
-// メディアクエリがマッチしたときのコールバック関数
-function handleMediaQueryChange(event) {
-  if (event.matches) {
-    // メディアクエリがマッチした場合の処理
-    pcElements.forEach((element) => {
-      element.style.display = "none"; // .pcクラスの要素を非表示にする
-    });
-    spElements.forEach((element) => {
-      element.style.display = "flex"; // .spクラスの要素を表示する
-    });
-  } else {
-    // メディアクエリがマッチしない場合の処理
-    pcElements.forEach((element) => {
-      element.style.display = "flex"; // .pcクラスの要素を表示する
-    });
-    spElements.forEach((element) => {
-      element.style.display = "none"; // .spクラスの要素を非表示にする
-    });
-  }
-}
-
-// メディアクエリの状態に変更があった場合にコールバック関数を呼び出す
-mediaQuery.addListener(handleMediaQueryChange);
-
-// 初期状態でメディアクエリの状態を確認
-handleMediaQueryChange(mediaQuery);
-
+  (function acsTrack(){
+  var PV = "phir6aimpmz8";
+  var _ARGSV = "成果識別子";
+  var KEYS = {cid : ["CL_", "ACT_", "cid_auth_get_type"], plid : ["PL_", "APT_", "plid_auth_get_type"]};
+  var turl = "https://trendmaker.jp/track.php?p=" + PV + "&args=" + _ARGSV;
+  var cks = document.cookie.split("; ").reduce(function(ret, s){ var kv = s.split("="); if(kv[0] && kv[1]) ret[kv[0]] = kv[1]; return ret; }, []);
+  turl = Object.keys(KEYS).reduce(function(url, k){ var vk = KEYS[k][0] + PV; var tk = KEYS[k][1] + PV; var v = "", t = ""; if(cks[vk]){ v = cks[vk]; if(cks[tk]) t = cks[tk]; }else if(localStorage.getItem(vk)){ v = localStorage.getItem(vk); t = "ls"; } if(v) url += "&" + k + "=" + v; if(t) url += "&" + KEYS[k][2] + "=" + t; return url; }, turl);
+  var xhr = new XMLHttpRequest(); xhr.open("GET", turl); xhr.send(); })();
 </script>
 <style>
   body {
