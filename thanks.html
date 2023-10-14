@@ -18,7 +18,8 @@
 <script>
   (function acsTrack(){
   var PV = "phir6aimpmz8";
-  var _ARGSV = "成果識別子";
+  const stripeBuyButtonId = '1NsJ04AUc6SfmWZAyvn9ix7E'
+  var _ARGSV = stripeBuyButtonId;
   var KEYS = {cid : ["CL_", "ACT_", "cid_auth_get_type"], plid : ["PL_", "APT_", "plid_auth_get_type"]};
   var turl = "https://trendmaker.jp/track.php?p=" + PV + "&args=" + _ARGSV;
   var cks = document.cookie.split("; ").reduce(function(ret, s){ var kv = s.split("="); if(kv[0] && kv[1]) ret[kv[0]] = kv[1]; return ret; }, []);
