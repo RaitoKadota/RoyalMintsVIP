@@ -13,6 +13,8 @@ rm -f law.php
 
 # RoyalMintsVIP ディレクトリ内の必要なファイルをコピー
 cp ./RoyalMintsVIP/index.php ./
-cp ./RoyalMintsVIP/thanks.php ./
-cp ./RoyalMintsVIP/law.php ./
+cp ./RoyalMintsVIP/index.html ./
+cp ./RoyalMintsVIP/thanks.html ./
+cp ./RoyalMintsVIP/law.html ./
+cp ./RoyalMintsVIP/policy.html ./
 cp ./RoyalMintsVIP/style.css ./
