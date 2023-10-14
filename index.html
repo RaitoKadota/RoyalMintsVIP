@@ -17,12 +17,18 @@
       <button class="header-button voice" onclick="scrollByPercentage(41)"></button>
       <button class="header-button price" onclick="scrollByPercentage(15)"></button>
       <button class="header-button buynow click-area"></button>
+      <div class="click-area pc-area0">
+      </div>
       <div class="click-area pc-area1">
       </div>
       <div class="click-area pc-area2">
       </div>
       <div class="click-area pc-area3">
       </div>
+      <a href="/policy" target="_blank" class="pc-area4">
+      </a>
+      <a href="/law" target="_blank" class="pc-area5">
+      </a>
     </div>
     <div class="sp">
       <div class="click-area sp-area0">
@@ -154,11 +160,21 @@ handleMediaQueryChange(mediaQuery);
     width: 100%;
     height: auto;
   }
+  .pc-area0 {
+    width: 30vw;
+    height: 5vw;
+    position: absolute;
+    top: 30vw;
+    left: 7vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
   .pc-area1 {
     width: 44vw;
     height: 15vw;
     position: absolute;
-    top: 93vw;
+    top: 90vw;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
@@ -167,7 +183,7 @@ handleMediaQueryChange(mediaQuery);
     width: 44vw;
     height: 15vw;
     position: absolute;
-    top: 290vw;
+    top: 284vw;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
@@ -176,7 +192,27 @@ handleMediaQueryChange(mediaQuery);
     width: 44vw;
     height: 15vw;
     position: absolute;
-    top: 440vw;
+    top: 450vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .pc-area4 {
+    width: 15vw;
+    height: 5vw;
+    position: absolute;
+    top: 488vw;
+    right: 18vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .pc-area5 {
+    width: 17vw;
+    height: 5vw;
+    position: absolute;
+    top: 488vw;
+    right: 0;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
