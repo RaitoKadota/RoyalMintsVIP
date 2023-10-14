@@ -10,21 +10,29 @@
 <body>
   <div id="index">
     <div class="pc">
-      <img src="https://cdn.discordapp.com/attachments/759981236063043594/1157716805859680481/pc-main-min.jpg" alt="">
+      <img src="https://cdn.discordapp.com/attachments/759981236063043594/1162657639277269062/royalmint.jpg" alt="">
       <button class="header-button about" onclick="scrollByPercentage(8)"></button>
       <button class="header-button campaign" onclick="scrollByPercentage(15)"></button>
       <button class="header-button features" onclick="scrollByPercentage(22)"></button>
       <button class="header-button voice" onclick="scrollByPercentage(41)"></button>
       <button class="header-button price" onclick="scrollByPercentage(15)"></button>
       <button class="header-button buynow click-area"></button>
+      <div class="click-area pc-area0">
+      </div>
       <div class="click-area pc-area1">
       </div>
       <div class="click-area pc-area2">
       </div>
       <div class="click-area pc-area3">
       </div>
+      <a href="/policy" target="_blank" class="pc-area4">
+      </a>
+      <a href="/law" target="_blank" class="pc-area5">
+      </a>
     </div>
     <div class="sp">
+      <div class="click-area sp-area0">
+      </div>
       <div class="click-area sp-area1">
       </div>
       <div class="click-area sp-area2">
@@ -33,8 +41,10 @@
       </div>
       <div class="click-area sp-area4">
       </div>
-      <div class="click-area sp-area5">
-      </div>
+      <a href="/policy" target="_blank" class="sp-area6">
+      </a>
+      <a href="/law" target="_blank" class="sp-area7">
+      </a>
       <img src="./RoyalMintsVIP/img/sp-buynow.jpg" class="header" alt="">
       <div class="sp-spacer"></div>
       <img src="./RoyalMintsVIP/img/sp-mainvisual.jpg" alt="">
@@ -50,7 +60,7 @@
       <img src="./RoyalMintsVIP/img/sp-qa-02.jpg" alt="">
       <img src="./RoyalMintsVIP/img/sp-campaign.jpg" alt="">
       <img src="./RoyalMintsVIP/img/image.jpg" alt="">
-      <img src="./RoyalMintsVIP/img/sp-buynow.jpg" alt="">
+      <img src="./RoyalMintsVIP/img/sp-footer.jpg" alt="">
     </div>
     <dialog id="dialog">
       <div class="dialog_inner">
@@ -150,11 +160,21 @@ handleMediaQueryChange(mediaQuery);
     width: 100%;
     height: auto;
   }
+  .pc-area0 {
+    width: 30vw;
+    height: 5vw;
+    position: absolute;
+    top: 30vw;
+    left: 7vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
   .pc-area1 {
     width: 44vw;
     height: 15vw;
     position: absolute;
-    top: 93vw;
+    top: 90vw;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
@@ -163,7 +183,7 @@ handleMediaQueryChange(mediaQuery);
     width: 44vw;
     height: 15vw;
     position: absolute;
-    top: 290vw;
+    top: 284vw;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
@@ -172,7 +192,37 @@ handleMediaQueryChange(mediaQuery);
     width: 44vw;
     height: 15vw;
     position: absolute;
-    top: 440vw;
+    top: 450vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .pc-area4 {
+    width: 15vw;
+    height: 5vw;
+    position: absolute;
+    top: 488vw;
+    right: 18vw;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .pc-area5 {
+    width: 17vw;
+    height: 5vw;
+    position: absolute;
+    top: 488vw;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area0 {
+    width: 100vw;
+    height: 18vw;
+    position: absolute;
+    top: 125vw;
+    right: 0;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
@@ -200,7 +250,7 @@ handleMediaQueryChange(mediaQuery);
     width: 90vw;
     height: 33vw;
     position: absolute;
-    top: 1200vw;
+    top: 1180vw;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
@@ -209,16 +259,26 @@ handleMediaQueryChange(mediaQuery);
     width: 90vw;
     height: 33vw;
     position: absolute;
-    top: 1540vw;
+    top: 1520vw;
     cursor: pointer;
     z-index: 100;
     /* background-color: aliceblue; */
   }
-  .sp-area5 {
-    width: 35vw;
-    height: 16vw;
+  .sp-area6 {
+    width: 50vw;
+    height: 10vw;
     position: absolute;
-    top: 1622vw;
+    top: 1605vw;
+    left: 0;
+    cursor: pointer;
+    z-index: 100;
+    /* background-color: aliceblue; */
+  }
+  .sp-area7 {
+    width: 50vw;
+    height: 10vw;
+    position: absolute;
+    top: 1605vw;
     right: 0;
     cursor: pointer;
     z-index: 100;
